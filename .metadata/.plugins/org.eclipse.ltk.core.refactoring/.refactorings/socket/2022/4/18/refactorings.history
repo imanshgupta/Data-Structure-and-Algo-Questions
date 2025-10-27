@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;socket.SocketProgram&apos; to &apos;SocketProgramServer&apos;&#x0A;- Original project: &apos;socket&apos;&#x0A;- Original element: &apos;socket.SocketProgram&apos;&#x0A;- Renamed element: &apos;socket.SocketProgramServer&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SocketProgram&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;socket{SocketProgram.java[SocketProgram" matchStrategy="1" name="SocketProgramServer" qualified="false" references="true" similarDeclarations="false" stamp="1651212044393" textual="false" version="1.0"/>
+</session>

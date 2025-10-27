@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id = "WishBean" class="com.java.Beans.WishBean">
+	<property name="nameString" value="ANSH"></property>
+</bean>
+
+<bean id = "WishEvening" class="com.java.Beans.WishEvening" parent="WishBean">
+	<property name="messageString;" value="EVENING"></property>
+</bean>
+
+<bean id = "WishMorning" class="com.java.Beans.WishMorning" parent="WishBean">
+	<property name="messageString;" value="Morning"></property>
+</bean>
+</beans>

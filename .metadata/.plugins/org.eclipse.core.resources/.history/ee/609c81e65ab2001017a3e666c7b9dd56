@@ -1,0 +1,49 @@
+package com.java.beans;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PropertiesLoaderUtils;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+public class UserValidatior implements Validator{
+	
+	
+	private Resource resource;
+	
+	@Override
+	public boolean supports(Class arg0) {
+		// TODO Auto-generated method stub
+		return User.class.equals(arg0);
+		
+	}
+
+	@Override
+	public void validate(Object arg0, Errors arg1) {
+		// TODO Auto-generated method stub
+		
+		try {
+			Properties properties = PropertiesLoaderUtils.loadProperties(resource);
+			User user=(User) arg0;
+			
+			
+			if(user.getUnameString()=="") {
+				arg1.rejectValue("unameString","error.uname.required",properties.getProperty("error.uname.required"));
+			}
+			
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	public void setResource(Resource resource) {
+		this.resource = resource;
+	}
+
+}

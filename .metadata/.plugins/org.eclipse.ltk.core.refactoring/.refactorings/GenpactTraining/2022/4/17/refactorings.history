@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day20thApril.Nio&apos; to &apos;NioFileWrite&apos;&#x0A;- Original project: &apos;GenpactTraining&apos;&#x0A;- Original element: &apos;day20thApril.Nio&apos;&#x0A;- Renamed element: &apos;day20thApril.NioFileWrite&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Nio&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day20thApril{Nio.java[Nio" matchStrategy="1" name="NioFileWrite" qualified="false" references="true" similarDeclarations="false" stamp="1650429150338" textual="false" version="1.0"/>
+</session>

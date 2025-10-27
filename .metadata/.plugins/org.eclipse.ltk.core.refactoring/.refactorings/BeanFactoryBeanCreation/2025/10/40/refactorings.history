@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.beanfactory.test.Test&apos; to &apos;TestBeanFactory&apos;&#x0A;- Original project: &apos;IOCContainer&apos;&#x0A;- Original element: &apos;com.beanfactory.test.Test&apos;&#x0A;- Renamed element: &apos;com.beanfactory.test.TestBeanFactory&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Test&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.beanfactory.test{Test.java[Test" matchStrategy="1" name="TestBeanFactory" qualified="false" references="true" similarDeclarations="false" stamp="1759403149123" textual="false" version="1.0"/>
+</session>

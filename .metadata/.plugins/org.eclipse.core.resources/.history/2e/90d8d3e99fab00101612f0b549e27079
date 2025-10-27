@@ -1,0 +1,56 @@
+package com.java.beans;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Set;
+
+public class Student {
+
+	private String nameString;
+	private Address address;
+	private ArrayList<Integer> marksList;
+	private Map<String, String> subjectsMap;
+	private Set<String> subjectSet;
+	public String getNameString() {
+		return nameString;
+	}
+	public void setNameString(String nameString) {
+		this.nameString = nameString;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "Student [nameString=" + nameString + ", address=" + address + ", marksList=" + marksList
+				+ ", subjectsMap=" + subjectsMap + ", subjectSet=" + subjectSet + "]";
+	}
+	public List getMarksList() {
+		return marksList;
+	}
+	public void setMarksList(List marksList) {
+		this.marksList = marksList;
+	}
+	public Map<String, String> getSubjectsMap() {
+		return subjectsMap;
+	}
+	public void setSubjectsMap(Map<String, String> subjectsMap) {
+		this.subjectsMap = subjectsMap;
+	}
+	public Set<String> getSubjectSet() {
+		return subjectSet;
+	}
+	public void setSubjectSet(Set<String> subjectSet) {
+		this.subjectSet = subjectSet;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,26 @@
+package com.java.Beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Student {
+
+	private String nameString;
+	private Address address;
+
+	
+	//WE use these tags on the constructor and add Qualifier to remove and ambiguity
+	
+	@Autowired(required=true)
+	public Student(String nameString, @Qualifier("address") Address address) {
+		super();
+		this.nameString = nameString;
+		this.address = address;
+	}
+	@Override
+	public String toString() {
+		return "Student [address=" + address + ", nameString=" + nameString + "]";
+	}
+	
+	
+}

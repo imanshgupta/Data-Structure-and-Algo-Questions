@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+
+	xmlns:p="http://www.springframework.org/schema/p">
+	
+	
+	<bean id="addressOfStudent" class="com.java.beans.Address" p:addressString="HOME"/>
+	
+	<bean id="subjectsOfStudentSubjects" class="com.java.beans.Subjects" p:subject1="ENGLISH" p:subject2="HINDI"/>
+	
+	
+	<!-- Main Bean where we have to use various types of auto wiring -->
+	<bean id="Student" class="com.java.beans.Student" autowire="byName" p:nameString="ANSH GUPTA"/>
+	
+	
+	
+	
+	
+		
+	
+	
+</beans>

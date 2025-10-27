@@ -1,0 +1,11 @@
+package com.java.service;
+
+public class ServiceImpl implements Service {
+
+	@Override
+	public String getStudent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

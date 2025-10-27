@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+		<bean id="Address" class="com.java.beans.Address">
+			<!-- Using constructor dependency injection -->
+			<constructor-arg value="50 Khuldabad"></constructor-arg>
+		</bean>
+	
+		<bean id="Student" class="com.java.beans.Student">
+		
+			<!-- Injecting Static String value -->
+			<property name="nameString" value="ANSH"></property>
+			<!-- Injecting Bean -->
+			<property name="address" ref="Address"></property>
+			<!-- Injecting List of Strings -->
+			<property name="marksList">
+				<list>
+					<value>10</value>
+					<value>20</value>
+				</list>
+			</property>	
+			<!-- Injecting Map of strings -->
+			<property name="subjectsMap">
+				<map>
+					<entry key="SUBJECT 1" value="MATHS"></entry>
+					<entry key="SUBJECT 2" value="COMPUTER"></entry>
+				</map>
+			</property>
+			<!-- Injecting SET of Strings -->
+			<property name="subjectSet">
+				<set>
+					<value>ENGLISH</value>
+					<value>HINDI</value>
+				</set>
+			</property>
+			
+			
+		</bean>
+	
+</beans>

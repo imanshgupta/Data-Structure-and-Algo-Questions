@@ -1,0 +1,9 @@
+package com.java.beans;
+
+public class Bean {
+
+	public Bean factory() {
+		System.out.println("Cration of bean");
+		return new Bean();
+	}
+}
