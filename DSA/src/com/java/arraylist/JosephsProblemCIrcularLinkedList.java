@@ -9,10 +9,10 @@ public class JosephsProblemCIrcularLinkedList {
 
 		LinkedList<Integer> list=new LinkedList<Integer>();
 		
-		int p= 7;
+		int n= 7;
 		int k=3;
 		
-		for(int x=0;x<p;x++) {
+		for(int x=0;x<n;x++) {
 			list.add(x);
 		}
 		
