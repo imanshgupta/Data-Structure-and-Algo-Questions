@@ -5988,3 +5988,20 @@ Java Model Exception: Error in Java Model (code 1009): Unknown javadoc format fo
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-10-26 16:08:02.009
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2025-10-27 13:00:28.135
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 1009): Unknown javadoc format for ChoicePeer [in ChoicePeer.class [in java.awt.peer [in /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:92)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:1043)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:234)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:93)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:78)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:63)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:582)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2025-10-27 13:00:28.135
+!MESSAGE Unknown javadoc format for ChoicePeer [in ChoicePeer.class [in java.awt.peer [in /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar]]]
