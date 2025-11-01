@@ -33,6 +33,12 @@ public class PreviousGreaterStack {
 			stack.push(arr[x]);
 			
 			
+			
+			
+			
+			
+			
+			
 		}
 		
 		

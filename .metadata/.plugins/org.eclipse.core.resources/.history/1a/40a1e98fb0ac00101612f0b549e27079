@@ -1,6 +1,0 @@
-package com.java.Beans;
-
-public class Address {
-
-	private String addString;
-}
