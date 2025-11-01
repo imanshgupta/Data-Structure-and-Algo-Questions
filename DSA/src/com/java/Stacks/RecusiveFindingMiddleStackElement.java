@@ -34,8 +34,7 @@ Output: [50, 40, 20, 10]
 		}
 		
 	}
-	
-	
+
 	
 	public static void findMid( Deque<Integer> u,int size, int current) {
 		

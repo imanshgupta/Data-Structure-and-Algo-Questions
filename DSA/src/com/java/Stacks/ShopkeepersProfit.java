@@ -35,7 +35,7 @@ adds (6 - 5) and (6 - 4) to the answer and makes it 9 + 1 + 2 = 12.
 
 */
 	
-	public static void main() {
+	public static void main(String args[]) {
 		
 		int arr[]= {5, 4, 6, 2, 1};
 		
